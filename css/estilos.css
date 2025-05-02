@@ -1,0 +1,82 @@
+header {
+    background-color: rgb(187, 187, 187);
+    padding: 1px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+table {
+    table-layout: fixed;
+    margin: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cabecera {
+    background-color: gray;
+    padding: 20px;
+}
+
+.info {
+    text-align: end;
+}
+
+.nombre {
+    text-align: left;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+    top: 150px;
+    /* Ajusta la posición superior */
+    left: 65px;
+    /* Ajusta la posición izquierda */
+    z-index: 0;
+    /* Asegura que la imagen esté por encima */
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 26fr 74fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
+    gap: 10px; /* Espacio entre las columnas (opcional) */
+}
+
+.contenedor2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
+    gap: 10px; /* Espacio entre las columnas (opcional) */
+}
+
+.columnas, .columnas2 {
+    padding: 10px; /* Espacio dentro de cada columna (opcional) */
+ /* Borde de cada columna (opcional) */
+}
+
+.referencias {
+    line-height: 3px;
+}
+
+h3 {
+    line-height: 1px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.subtitulo {
+    background-color: rgb(230, 230, 230);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    background-color: rgb(187, 187, 187);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20px;
+}
+
+
