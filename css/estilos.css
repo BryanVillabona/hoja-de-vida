@@ -1,7 +1,55 @@
+@font-face {
+    font-family: 'CarterOne';
+    src: url('../fonts/CarterOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Girassol';
+    src: url('../fonts/Girassol-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('../fonts/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OldStandard';
+    src: url('../fonts/OldStandardTT-Regular.ttf') format('truetype'),
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+* {
+    font-family: 'OldStandard';
+}
+
+h1  {
+    font-family: 'CarterOne';
+}
+
+h3 {
+    line-height: 1px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'YoungSerif';
+}
+
+
 header {
     background-color: rgb(187, 187, 187);
     padding: 1px;
     border-radius: 0px 0px 10px 10px;
+    animation: aparecer 1s ease-out;
 }
 
 table {
@@ -34,8 +82,13 @@ table {
     /* Ajusta la posición superior */
     left: 65px;
     /* Ajusta la posición izquierda */
-    z-index: 0;
-    /* Asegura que la imagen esté por encima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border: 3px solid #555;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.05);
 }
 
 .contenedor {
@@ -59,17 +112,26 @@ table {
     line-height: 3px;
 }
 
-h3 {
-    line-height: 1px;
-    text-align: center;
-    padding: 5px;
-    
-}
-
 .subtitulo {
     background-color: rgb(230, 230, 230);
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    /*0: desplazamiento horizontal → no se mueve a la izquierda ni a la derecha.
+    2px: desplazamiento vertical → la sombra cae 8 píxeles hacia abajo.
+    15px: difuminado → qué tanto se extiende la sombra (cuanto mayor, más suave).
+    rgba(0, 0, 0, 0.3): color de la sombra en formato RGBA → negro con 30% de opacidad.*/
+}
+
+.subtitulo:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.izquierda {
+    margin-top: 200px;
 }
 
 footer {
@@ -77,6 +139,20 @@ footer {
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
     margin-top: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(14, 14, 138);
+}
+
+.icono {
+    vertical-align: middle;
 }
 
 
