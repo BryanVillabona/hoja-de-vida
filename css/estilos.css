@@ -44,7 +44,6 @@ h3 {
     font-family: 'YoungSerif';
 }
 
-
 header {
     background-color: rgb(187, 187, 187);
     padding: 1px;
@@ -95,6 +94,7 @@ table {
     display: grid;
     grid-template-columns: 26fr 74fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
     gap: 10px; /* Espacio entre las columnas (opcional) */
+   
 }
 
 .contenedor2 {
@@ -105,7 +105,8 @@ table {
 
 .columnas, .columnas2 {
     padding: 10px; /* Espacio dentro de cada columna (opcional) */
- /* Borde de cada columna (opcional) */
+   
+
 }
 
 .referencias {
