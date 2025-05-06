@@ -148,11 +148,11 @@ a {
 }
 
 a:hover {
-    color: rgb(14, 14, 138);
+    color: #cc0606;
 }
 
 .icono {
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }
 
 .empresa {
@@ -192,3 +192,16 @@ a:hover {
 }
 /* Estilos para pantallas pequeñas (móviles) */
 
+.footer {
+    background-color: rgb(187, 187, 187);
+    color: #000000;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+small {
+    margin-top: 10px;
+    color: #000000;
+}
