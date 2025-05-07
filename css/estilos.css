@@ -35,13 +35,15 @@
 
 h1  {
     font-family: 'CarterOne';
+    margin-top: 50px;
 }
 
-h3 {
+h2 {
     line-height: 1px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-family: 'YoungSerif';
+    font-size: 18px;
 }
 
 header {
@@ -51,18 +53,40 @@ header {
     animation: aparecer 1s ease-out;
 }
 
-.cabecera {
+.franja-gris {
     background-color: gray;
     padding: 20px;
     text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 10px; 
+}
+
+.subcontenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.columna-izquierda {
+    padding: 10px;
+}
+
+.columna-derecha {
+    padding: 10px;
+    text-align: end;
 }
 
 .info-contacto {
-  margin-bottom: 15px; /* Espaciado similar al <br><br> */
+  margin-bottom: 15px;
 }
 
-.titulo {
-    margin-top: 50px;
+.izquierda {
+    margin-top: 210px;
 }
 
 .foto-perfil {
@@ -82,31 +106,6 @@ header {
     transform: scale(1.05) rotate(-1deg);
 }
 
-.contenedor {
-    display: grid;
-    grid-template-columns: 1fr 2.4fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
-    gap: 10px; /* Espacio entre las columnas (opcional) */
-}
-
-.contenedor2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
-    gap: 10px; /* Espacio entre las columnas (opcional) */
-}
-
-.columnas {
-    padding: 10px; /* Espacio dentro de cada columna (opcional) */
-}
-
-.columnas2 {
-    padding: 10px;
-    text-align: end;
-}
-
-.referencias {
-    line-height: 3px;
-}
-
 .subtitulo {
     background-color: rgb(230, 230, 230);
     border-top: 1px solid black;
@@ -121,19 +120,16 @@ header {
     rgba(0, 0, 0, 0.3): color de la sombra en formato RGBA → negro con 30% de opacidad.*/
 }
 
+.referencias {
+    line-height: 3px;
+}
+
 .subtitulo:hover {
     background-color: rgb(200, 200, 200);
 }
 
-.izquierda {
-    margin-top: 190px;
-}
-
-footer {
-    background-color: rgb(187, 187, 187);
-    padding: 10px;
-    border-radius: 10px 10px 0px 0px;
-    margin-top: 20px;
+.empresa {
+    line-height: 0px;
 }
 
 a {
@@ -152,20 +148,14 @@ a:hover {
     height: 16px;
 }
 
-.empresa {
-    line-height: 0px;
-}
-
-.fecha {
-    text-align: end;
-}
-
-.footer {
+footer {
     background-color: rgb(187, 187, 187);
     color: #000000;
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 small {
