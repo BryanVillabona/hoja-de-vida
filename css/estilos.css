@@ -51,16 +51,10 @@ header {
     animation: aparecer 1s ease-out;
 }
 
-table {
-    table-layout: fixed;
-    margin: auto;
-    border-collapse: collapse;
-    width: 100%;
-}
-
 .cabecera {
     background-color: gray;
     padding: 20px;
+    text-align: center;
 }
 
 .info {
@@ -71,16 +65,18 @@ table {
     text-align: left;
 }
 
+.titulo {
+    margin-top: 50px;
+}
+
 .foto-perfil {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     margin: 10px;
     position: absolute;
-    top: 150px;
-    /* Ajusta la posición superior */
-    left: 65px;
-    /* Ajusta la posición izquierda */
+    top: 180px;
+    left: 90px;
     border: 4px solid white;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -92,7 +88,7 @@ table {
 
 .contenedor {
     display: grid;
-    grid-template-columns: 26fr 74fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
+    grid-template-columns: 31fr 74fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
     gap: 10px; /* Espacio entre las columnas (opcional) */
    
 }
@@ -103,10 +99,13 @@ table {
     gap: 10px; /* Espacio entre las columnas (opcional) */
 }
 
-.columnas, .columnas2 {
+.columnas {
     padding: 10px; /* Espacio dentro de cada columna (opcional) */
-   
+}
 
+.columnas2 {
+    padding: 10px;
+    text-align: end;
 }
 
 .referencias {
@@ -132,7 +131,7 @@ table {
 }
 
 .izquierda {
-    margin-top: 200px;
+    margin-top: 190px;
 }
 
 footer {
@@ -152,8 +151,10 @@ a:hover {
     color: #cc0606;
 }
 
-.icono {
+.icono, .icono2 {
     vertical-align: text-bottom;
+    width: 16px;
+    height: 16px;
 }
 
 .empresa {
@@ -196,13 +197,11 @@ a:hover {
 .footer {
     background-color: rgb(187, 187, 187);
     color: #000000;
-    padding: 20px 10px;
     text-align: center;
     margin-top: 40px;
     font-size: 14px;
 }
 
 small {
-    margin-top: 10px;
-    color: #000000;
+    color: #ffffff;
 }
