@@ -57,12 +57,8 @@ header {
     text-align: center;
 }
 
-.info {
-    text-align: end;
-}
-
-.nombre {
-    text-align: left;
+.info-contacto {
+  margin-bottom: 15px; /* Espaciado similar al <br><br> */
 }
 
 .titulo {
@@ -88,9 +84,8 @@ header {
 
 .contenedor {
     display: grid;
-    grid-template-columns: 31fr 74fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
+    grid-template-columns: 1fr 2.4fr; /* Dos columnas iguales. fr: fracción del espacio disponible. */
     gap: 10px; /* Espacio entre las columnas (opcional) */
-   
 }
 
 .contenedor2 {
@@ -165,7 +160,23 @@ a:hover {
     text-align: end;
 }
 
+.footer {
+    background-color: rgb(187, 187, 187);
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+small {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
+    body {
+        padding: 5px;
+      }
+
     .contenedor {
         grid-template-columns: 1fr;
     }
@@ -193,15 +204,3 @@ a:hover {
     }
 }
 /* Estilos para pantallas pequeñas (móviles) */
-
-.footer {
-    background-color: rgb(187, 187, 187);
-    color: #000000;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-small {
-    color: #ffffff;
-}
