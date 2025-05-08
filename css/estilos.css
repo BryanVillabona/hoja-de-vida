@@ -127,10 +127,10 @@ header {
 .subtitulo:hover {
     background-color: rgb(200, 200, 200);
 }
-
+/*
 .empresa {
     line-height: 0px;
-}
+}*/
 
 a {
     color: black;
@@ -142,7 +142,7 @@ a:hover {
     color: #cc0606;
 }
 
-.icono, .icono2 {
+.icono {
     vertical-align: text-bottom;
     width: 16px;
     height: 16px;
@@ -162,10 +162,8 @@ small {
     color: #ffffff;
 }
 
+/*
 @media screen and (max-width: 768px) {
-    body {
-        padding: 5px;
-      }
 
     .contenedor {
         grid-template-columns: 1fr;
@@ -178,6 +176,68 @@ small {
     .foto-perfil {
         position: static;
         margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .izquierda {
+        margin-top: 20px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .nombre h1 {
+        text-align: center;
+    }
+
+}
+ Estilos para pantallas pequeñas (móviles) */
+
+ @media (max-width: 400px){
+
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor2 {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-perfil {
+        position: static;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .izquierda {
+        margin-top: 20px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .nombre h1 {
+        text-align: center;
+    }          
+}
+
+@media (min-width: 400px) and (max-width: 650px){
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor2 {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-perfil {
+        position: static;
+        margin: 0 auto;
+        margin-top: 20px;
         display: block;
     }
 
@@ -193,4 +253,32 @@ small {
         text-align: center;
     }
 }
-/* Estilos para pantallas pequeñas (móviles) */
+
+@media (max-width: 1200px){
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor2 {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-perfil {
+        position: static;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .izquierda {
+        margin-top: 20px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .nombre h1 {
+        text-align: center;
+    }
+}
