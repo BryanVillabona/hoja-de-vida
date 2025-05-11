@@ -60,9 +60,9 @@ Se implementaron varios `@media queries` para asegurar que el sitio se visualice
 ## Autor
 
 **Bryan Andrés Villabona**  
-[bvillabona13@gmail.com](mailto:bvillabona13@gmail.com)  
-[GitHub: BryanVillabona](https://github.com/BryanVillabona)
-[Github Pages: HDV BryanVillabona](https://bryanvillabona.github.io/hoja-de-vida/)
+- [bvillabona13@gmail.com](mailto:bvillabona13@gmail.com)  
+- [GitHub: BryanVillabona](https://github.com/BryanVillabona)
+- [Github Pages: HDV BryanVillabona](https://bryanvillabona.github.io/hoja-de-vida/)
 
 ---
 
